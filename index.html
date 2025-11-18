@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Breed - Pet Breeding</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -14,25 +14,67 @@
         <nav class="nav-bar">
             <div class="container">
                 <a class="logo" href="#">breed</a>
-                <div class="nav-bar menu-switcher">
-                    <ul class="nav-bar items">
-                        <li class="nav-bar item"><a href="#">Home</a></li>
-                        <li class="nav-bar item"><a href="#">About</a></li>
-                        <li class="nav-bar item"><a href="#">Breed</a></li>
-                        <li class="nav-bar item"><a href="#">Blog</a></li>
-                        <li class="nav-bar item"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Breed</a>
+                        <div class="dropdown-menu">
+                            <a href="#">German Shepherd</a>
+                            <a href="#">Labrador</a>
+                            <a href="#">Rottweiler</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <div></div>
+        <section class="slider-content">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1920&h=600&fit=crop"
+                        alt="Dog 1">
+                    <div class="slide-content">
+                        <h2>WE LOVE PETS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat tenetur natus
+                            deleniti eum, corrupti ratione voluptas cum praesentium quas.</p>
+                        <div class="slide-buttons">
+                            <a href="#" class="btn btn-outline">GET STARTED</a>
+                            <a href="#" class="btn btn-primary">DOWNLOAD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1920&h=600&fit=crop"
+                        alt="Dog 2">
+                    <div class="slide-content">
+                        <h2>CARE FOR DOGS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi unde impedit necessitatibus,
+                            soluta sint quam minima expedita atque corrupti reiciendis.</p>
+                        <div class="slide-buttons">
+                            <a href="#" class="btn btn-outline">LEARN MORE</a>
+                            <a href="#" class="btn btn-outline">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+            <div class="slider-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+            </div>
+        </section>
     </main>
-
-    <footer></footer>
 </body>
-
 
 </html>
