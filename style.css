@@ -307,6 +307,34 @@ body {
 }
 
 
+/* MAIN STYLES */
+
+.dog-life {
+    display: block;
+    padding: 100px 50px;
+}
+
+.dog-life__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #221620;
+}
+
+.dog-life__content {
+    display: flex;
+}
+
+.dog-life__content .content-col {
+    width: 33% - 20px;
+    padding: 0 40px;
+}
+
+
+
+
+
+/*  Footer Styles */
 .footer-main {
     background-color: #221620;
     color: white;
