@@ -1,3 +1,23 @@
-h1 {
-    color: blue;
+.nav-bar {
+    width: 100%;
+    background-color: #221620;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .item {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
 }
